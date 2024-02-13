@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:security_app/pages/login.dart';
 import 'package:security_app/pages/menu.dart';
 
 void main()
@@ -11,7 +12,7 @@ class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: menu(),
+      home: login(),
     );
   }
 }
