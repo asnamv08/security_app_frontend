@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:security_app/pages/menu.dart';
+import 'package:security_app/pages/securitylogin.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -30,7 +31,17 @@ class _loginState extends State<login> {
               foregroundColor: Colors.purple
             ),onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>menu()));
-              }, child: Text("Login",style: TextStyle(fontSize: 20),)))
+              }, child: Text("Login",style: TextStyle(fontSize: 20),))),
+        SizedBox(height: 10,),
+        SizedBox(
+            width: 200,
+            height: 60,
+            child: ElevatedButton(style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.purple
+            ),onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>securitylogin()));
+            }, child: Text("Security Login",style: TextStyle(fontSize: 20),)))
       ],),),
     );
   }
