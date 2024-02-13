@@ -43,17 +43,17 @@ class _addsecurityState extends State<addsecurity> {
         body: SingleChildScrollView(
           child: Container(padding: EdgeInsets.all(20),child: Column(children: [
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Name"),hintText: ("Enter your Name"),border: OutlineInputBorder()),),
+            TextField(controller: getname,decoration: InputDecoration(labelText: ("Name"),hintText: ("Enter your Name"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Employee Id"),hintText: ("Enter your Employee Id"),border: OutlineInputBorder()),),
+            TextField(controller: getempid,decoration: InputDecoration(labelText: ("Employee Id"),hintText: ("Enter your Employee Id"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Address"),hintText: ("Enter your Contact Address"),border: OutlineInputBorder()),),
+            TextField(controller: getaddress,decoration: InputDecoration(labelText: ("Address"),hintText: ("Enter your Contact Address"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Phone No"),hintText: ("Enter your Contact Number"),border: OutlineInputBorder()),),
+            TextField(controller: getphone,decoration: InputDecoration(labelText: ("Phone No"),hintText: ("Enter your Contact Number"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Email"),hintText: ("Enter your Email Id"),border: OutlineInputBorder()),),
+            TextField(controller: getemail,decoration: InputDecoration(labelText: ("Email"),hintText: ("Enter your Email Id"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
-            TextField(decoration: InputDecoration(labelText: ("Password"),hintText: ("Enter your Password"),border: OutlineInputBorder()),),
+            TextField(controller: getpassword,decoration: InputDecoration(labelText: ("Password"),hintText: ("Enter your Password"),border: OutlineInputBorder()),),
             SizedBox(height: 10,),
             SizedBox(
               width: 200,
