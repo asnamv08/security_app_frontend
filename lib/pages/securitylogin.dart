@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:security_app/pages/securitymenu.dart';
 
 class securitylogin extends StatefulWidget {
   const securitylogin({super.key});
@@ -29,9 +30,9 @@ class _securityloginState extends State<securitylogin> {
     backgroundColor: Colors.white,
     foregroundColor: Colors.purple
     ),onPressed: (){
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>menu()));
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>securtitymenu()));
     }, child: Text("Login",style: TextStyle(fontSize: 20),))),
-      ),
-    );
+      ]),
+    )));
   }
 }
