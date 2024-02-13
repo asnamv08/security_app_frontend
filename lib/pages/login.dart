@@ -14,7 +14,7 @@ class _loginState extends State<login> {
     return Scaffold(
       appBar: AppBar(title: Text("Login"),backgroundColor: Colors.purple,),
       body: Container(decoration: BoxDecoration(gradient: LinearGradient(colors: [
-        Colors.purple,
+        Colors.deepPurpleAccent,
         Colors.red
       ])),padding: EdgeInsets.all(20),child: Column(children: [
         SizedBox(height: 10,),
