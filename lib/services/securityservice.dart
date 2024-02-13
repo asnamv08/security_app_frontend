@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'package:http/http.dart'as http;
 import 'package:security_app/models/securitymodel.dart';
 
-class SecurityApiServce {
-  Future<dynamic> senddata(String name,
-      String age,
+class SecurityApiService {
+  Future<dynamic> senddata(
+      String name,
       String empid,
       String address,
       String phone,

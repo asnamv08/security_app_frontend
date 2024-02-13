@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:security_app/services/securityservice.dart';
 
 class addsecurity extends StatefulWidget {
   const addsecurity({super.key});
@@ -8,6 +9,32 @@ class addsecurity extends StatefulWidget {
 }
 
 class _addsecurityState extends State<addsecurity> {
+  TextEditingController getname=new TextEditingController();
+  TextEditingController getempid=new TextEditingController();
+  TextEditingController getaddress=new TextEditingController();
+  TextEditingController getphone=new TextEditingController();
+  TextEditingController getemail=new TextEditingController();
+  TextEditingController getpassword=new TextEditingController();
+  void Sendvaluetoapi()async{
+    final response=await SecurityApiService().senddata(
+      getname.text,
+      getempid.text,
+      getaddress.text,
+      getphone.text,
+      getemail.text,
+      getpassword.text
+    );
+    if(response["status"]=="success")
+    {
+      print("successfully");
+    }
+    else
+    {
+      print("error");
+    }
+
+
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,7 +61,7 @@ class _addsecurityState extends State<addsecurity> {
               child: ElevatedButton(style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurple,
                 foregroundColor: Colors.white
-              ),onPressed: (){}, child: Text("Register",style: TextStyle(fontSize: 20),)),
+              ),onPressed:Sendvaluetoapi, child: Text("Register",style: TextStyle(fontSize: 20),)),
             ),
             SizedBox(height: 10,),
             SizedBox(

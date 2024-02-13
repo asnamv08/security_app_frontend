@@ -14,7 +14,7 @@ class _sviewState extends State<sview> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    data=SecurityApiServce().getPosts();
+    data=SecurityApiService().getPosts();
   }
   @override
   Widget build(BuildContext context) {
