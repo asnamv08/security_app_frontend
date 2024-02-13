@@ -8,7 +8,8 @@ class menu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home:Scaffold(
       appBar: AppBar(title: Text("Security App",style: TextStyle(fontSize: 25),),backgroundColor: Colors.pink.shade300,),
       body: Container(width: double.infinity,decoration: BoxDecoration(gradient: LinearGradient(colors: [
         Colors.deepPurpleAccent,
@@ -45,6 +46,6 @@ class menu extends StatelessWidget {
             }, child: Text("View All Visitors",style: TextStyle(fontSize: 20),))),
         SizedBox(height: 10,),
       ],),),
-    );
+    ),);
   }
 }
